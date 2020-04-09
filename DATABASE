@@ -1,5 +1,5 @@
 QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
-        db.setHostName("www.amazonwebservices.com");
+        db.setHostName("www.mysql.com");
         db.setPort(3306);
         db.setDatabaseName("ictrlinn_microembdb");
         db.setUserName("ictrlinn_microst");
