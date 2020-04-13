@@ -1,6 +1,6 @@
 QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
         db.setHostName("www.mysql.com");
-        db.setPort(3306);
+        db.setPort(3306);                  // it is used for the radio frequency code
         db.setDatabaseName("ictrlinn_microembdb");
         db.setUserName("ictrlinn_microst");
         db.setPassword("microemb@1411");
@@ -14,6 +14,6 @@ QSqlDatabase db=QSqlDatabase::addDatabase("QMYSQL");
     }
 void Main ()
 {
-QsqlQueery squery;
+QsqlQuery squery;                       // it is used for executing SQL statements
 squery.exec("UPDATE gpslocation SET latitude="'+latistatus+"',longitude="'+longistatus+"'WHERE sno=1");
 }
